@@ -1,14 +1,17 @@
 package Threads.ProducerConsumer.Semaphore;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class Store {
-    private List<Object> items;
+   // private List<Object> items;
+    private ConcurrentLinkedQueue<Object> items;
     private int MAX_SIZE;
 
     public Store(int max_size){
-        items = new ArrayList<Object>(max_size);
+        items = new ConcurrentLinkedQueue<>();
         MAX_SIZE = max_size;
     }
 
@@ -17,7 +20,7 @@ public class Store {
     }
 
     public void removeItem(){
-        items.remove(items.size()-1);
+        items.remove();
     }
 
     public int getMAX_SIZE(){
