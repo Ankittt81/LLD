@@ -11,7 +11,9 @@ public class Adder implements Callable<Void> {
 
     public Void call(){
         for(int i=0;i<=1000;i++){
+
             count.incrementCountByX(i);
+            //Java takes the lock on the object that is calling the sync method
         }
         return null;
     }
