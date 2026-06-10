@@ -59,5 +59,17 @@ public class Client {
         orderProcessor.addOrder(order6);
 
         orderProcessor.processAllOrders();
+
+        //print id of orders using streams
+      //  items.stream().forEach(i->System.out.println(i.getId()));
+        items.stream().map((x)->x.getId()).forEach((i)->System.out.println(i));
+        List<Integer> lenghts=items.stream().map((x)->x.getName().length()).toList();
+       List<String> names= items.stream()
+                .filter((x)->x.getPrice()>1000 && x.getQuantity()>0)
+                .map((x)->x.getName())
+                .distinct()
+                .sorted()
+                .limit(5)
+                .toList();
     }
 }
