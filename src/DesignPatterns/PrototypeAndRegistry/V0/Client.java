@@ -12,6 +12,7 @@ public class Client {
         else if(character instanceof ZombieCharacter){
             character1=new ZombieCharacter((ZombieCharacter)character);
         }
+        //SRP OCP violation,Too many if-else
     }
     public static void main(String[] args) {
         Character character = new Character(1, "XYZ", 200, "some");
