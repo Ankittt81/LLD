@@ -1,4 +1,9 @@
-package DesignPatterns.Factory.V3_AbstractFactory;
+package DesignPatterns.Factory.V3_AbstractFactory.databaseComponentFactory;
+
+import DesignPatterns.Factory.V3_AbstractFactory.transaction.RCTTransaction;
+import DesignPatterns.Factory.V3_AbstractFactory.transaction.Transaction;
+import DesignPatterns.Factory.V3_AbstractFactory.query.Query;
+import DesignPatterns.Factory.V3_AbstractFactory.query.SqlQuery;
 
 public class MySqlComponentFactory implements DataBaseComponentFactory {
     @Override

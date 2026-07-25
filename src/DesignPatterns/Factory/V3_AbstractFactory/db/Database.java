@@ -1,4 +1,6 @@
-package DesignPatterns.Factory.V3_AbstractFactory;
+package DesignPatterns.Factory.V3_AbstractFactory.db;
+
+import DesignPatterns.Factory.V3_AbstractFactory.databaseComponentFactory.DataBaseComponentFactory;
 
 public abstract class  Database {
   public  abstract void connect();

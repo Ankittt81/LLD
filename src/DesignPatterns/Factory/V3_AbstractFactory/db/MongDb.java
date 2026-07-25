@@ -1,4 +1,7 @@
-package DesignPatterns.Factory.V3_AbstractFactory;
+package DesignPatterns.Factory.V3_AbstractFactory.db;
+
+import DesignPatterns.Factory.V3_AbstractFactory.databaseComponentFactory.DataBaseComponentFactory;
+import DesignPatterns.Factory.V3_AbstractFactory.databaseComponentFactory.MongoDbComponentFactory;
 
 public class MongDb extends Database {
     @Override
@@ -11,8 +14,4 @@ public class MongDb extends Database {
         return new MongoDbComponentFactory();
     }
 
-//    @Override
-//  public  Query createQuery() {
-//        return new NoSqlQuery();
-//    }
 }

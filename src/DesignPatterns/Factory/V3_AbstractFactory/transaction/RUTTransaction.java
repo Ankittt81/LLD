@@ -1,6 +1,6 @@
-package DesignPatterns.Factory.V3_AbstractFactory;
+package DesignPatterns.Factory.V3_AbstractFactory.transaction;
 
-public class RUTTransaction implements Transaction{
+public class RUTTransaction implements Transaction {
 
     @Override
     public void transaction() {

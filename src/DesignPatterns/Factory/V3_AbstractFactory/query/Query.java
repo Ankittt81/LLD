@@ -1,4 +1,4 @@
-package DesignPatterns.Factory.V3_AbstractFactory;
+package DesignPatterns.Factory.V3_AbstractFactory.query;
 
 public interface Query {
     void query();

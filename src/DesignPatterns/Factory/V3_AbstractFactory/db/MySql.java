@@ -1,4 +1,7 @@
-package DesignPatterns.Factory.V3_AbstractFactory;
+package DesignPatterns.Factory.V3_AbstractFactory.db;
+
+import DesignPatterns.Factory.V3_AbstractFactory.databaseComponentFactory.DataBaseComponentFactory;
+import DesignPatterns.Factory.V3_AbstractFactory.databaseComponentFactory.MySqlComponentFactory;
 
 public class MySql extends Database {
 
@@ -12,8 +15,5 @@ public class MySql extends Database {
         return new MySqlComponentFactory();
     }
 
-//    @Override
-//   public Query createQuery() {
-//        return new SqlQuery();
-//    }
+
 }
